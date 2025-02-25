@@ -1,0 +1,33 @@
+
+/* Main section styles */
+.main-content {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #cab3b3;
+    text-align: center;
+   
+  }
+  
+  .campus-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    
+  }
+  
+  .search-button {
+    background-color: #5f5f5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .box2{
+    padding-top: 110px;
+  }
+  
+  

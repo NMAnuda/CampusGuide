@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.app-container {
+  display: flex;
+  padding-top: 10px;
+}
+.sidebar {
+    position: sticky;
+    padding-top:10px;
+    height: 500px;
+    width: 70px;
+    background-color: #b3a3a3;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .outerbox{
+    padding-top:60px;
+    padding-left: 10px;
+    z-index: 1000;
+    position: sticky;
+    position: fixed;
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 20px;
+    padding: 70px 0px 70px 0px;
+    text-align: center;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s;
+   text-align: justify;
+  }
+  
+  .sidebar a:hover {
+    color: #4a3f3f;
+  }
+  
+  .sidebar-line {
+    border: none;
+    border-top: 1px solid #6e5c5c;
+    margin: 10px 0;
+  }
+  .hs{
+    justify-content: center;
+    width:100%;
+  }
+.asb {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tablebox1{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+
+  width: 100%;
+ padding-top: 40px;
+}
+
+/* Table header styling */
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+thead th {
+  padding: 12px;
+}
+
+/* Table body styling */
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody td {
+  padding: 10px;
+}
+
+/* Button styling */
+button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Update button styling */
+button:first-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+button:first-of-type:hover {
+  background-color: #0056b3;
+}
+
+/* Delete button styling */
+button:last-of-type {
+  background-color: #bc3737;
+  color: white;
+}
+
+button:last-of-type:hover {
+  background-color: #4d3535;
+}
+
+/* Heading styling */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Center alignment for actions */
+td:last-child {
+  text-align: center;
+}
+
+  
+  

@@ -1,0 +1,87 @@
+.feedback-table-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .sidebar {
+      position: sticky;
+      padding-top:10px;
+      height: 500px;
+      width: 70px;
+      background-color: #b3a3a3;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .outerbox1{
+      padding-top:20px;
+      padding-left: 10px;
+      z-index: 1000;
+      position: sticky;
+      position: fixed;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .sidebar li {
+      margin-bottom: 20px;
+      padding: 70px 0px 70px 0px;
+      text-align: center;
+    }
+    
+    .sidebar a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s;
+     text-align: justify;
+    }
+    
+    .sidebar a:hover {
+      color: #4a3f3f;
+    }
+    
+    .sidebar-line {
+      border: none;
+      border-top: 1px solid #6e5c5c;
+      margin: 10px 0;
+    }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .feedback-table th,
+  .feedback-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  .feedback-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .feedback-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .feedback-table tr:hover {
+    background-color: #e9ecef;
+  }
+  
