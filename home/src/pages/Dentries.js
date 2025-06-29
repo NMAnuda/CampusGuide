@@ -3,14 +3,21 @@ import './dentries.css';
 import Axios from "axios";
 import { Link } from 'react-router-dom';
 
-
 function Dentries() {
     const [formData, setFormData] = useState({
         district: '',
         stream: '',
+        subject1: '',
+        subject2: '',
+        subject3: '',
+        course: '',
         zValue1: '',
-        zValue2: ''
+        zValue2: '',
+        campus: '',
+        year: '',
+        Students: ''
     });
+
     const [users, setusers] = useState([]);
 
     const handleinput = (event) => {
@@ -25,11 +32,7 @@ function Dentries() {
         event.preventDefault();
         const newdata = {
             id: Date.now(),
-            district: formData.district,
-            stream: formData.stream,
-            course: formData.course,
-            zValue1: formData.zValue1,
-            zValue2: formData.zValue2,
+            ...formData 
         };
 
         setusers((prevUsers) => [...prevUsers, newdata]);
@@ -48,19 +51,7 @@ function Dentries() {
 
     return (
         <div className="app-container">
-            <div className='outerbox'>
-            <div className="sidebar">
-                <ul>
-                    <li><Link to ="/">Add</Link></li>
-                    <hr className="sidebar-line" />
-                    <li><Link to="/veiwfeedback">Notify</Link></li>
-                    <hr className="sidebar-line" />
-                    <li><Link to ="/All" >All</Link></li>
-                </ul>
-            </div>
-            </div>
-            {/* Form Section */}
-            <div className="form-container ">
+            <div className="form-container">
                 <form onSubmit={handleSubmit}>
                     <h2 className="form-title">Submit Your Information</h2>
 
@@ -89,7 +80,43 @@ function Dentries() {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="course">Enter course</label>
+                        <label htmlFor="subject1">Enter Subject 1</label>
+                        <input
+                            onChange={handleinput}
+                            value={formData.subject1}
+                            type="text"
+                            id="subject1"
+                            className="input-box"
+                            placeholder="Enter subject 1"
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="subject2">Enter Subject 2</label>
+                        <input
+                            onChange={handleinput}
+                            value={formData.subject2}
+                            type="text"
+                            id="subject2"
+                            className="input-box"
+                            placeholder="Enter subject 2"
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="subject3">Enter Subject 3</label>
+                        <input
+                            onChange={handleinput}
+                            value={formData.subject3}
+                            type="text"
+                            id="subject3"
+                            className="input-box"
+                            placeholder="Enter subject 3"
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="course">Enter Course</label>
                         <input
                             onChange={handleinput}
                             value={formData.course}
@@ -97,6 +124,42 @@ function Dentries() {
                             id="course"
                             className="input-box"
                             placeholder="Enter course"
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="campus">Enter Campus</label>
+                        <input
+                            onChange={handleinput}
+                            value={formData.campus}
+                            type="text"
+                            id="campus"
+                            className="input-box"
+                            placeholder="Enter campus"
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="year">Enter Year</label>
+                        <input
+                            onChange={handleinput}
+                            value={formData.year}
+                            type="text"
+                            id="year"
+                            className="input-box"
+                            placeholder="Enter year"
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="students">Enter Number of Students</label>
+                        <input
+                            onChange={handleinput}
+                            value={formData.students}
+                            type="number"
+                            id="students"
+                            className="input-box"
+                            placeholder="Enter number of students"
                         />
                     </div>
 
@@ -121,11 +184,10 @@ function Dentries() {
                             />
                         </div>
                     </div>
-                    <div className='outerbox2'>
-                    <div className="box3">
-                        <button type="submit" className="submit-button">Submit</button>
-                    </div>
-                    </div>
+
+<button type="submit" className="submit-button">Submit</button>
+
+
                 </form>
             </div>
         </div>

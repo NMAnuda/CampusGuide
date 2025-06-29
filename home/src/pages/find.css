@@ -1,113 +1,92 @@
-body {
+
+body, h1, h2, h3, p, table {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  .app-container {
-    display: flex;
-    padding-top: 10px;
-  }
-.kj
-{
-    justify-content: center;
-    width: 100%;
+    padding:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-    
-    .outerbox{
-      padding-top:60px;
-      padding-left: 10px;
-      z-index: 1000;
-      position: sticky;
-      position: fixed;
-    }
- 
-  .as {
-    border-collapse: collapse;
-    width: 80%;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .tablebox{
+
+.find-container {
+    background-color: #f4f7fb;
+    min-height: 100vh;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
-    padding-top: 110px;
+    align-items: flex-start;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     width: 100%;
+    max-width: 1000px;
+}
 
-  }
-
-  thead {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  thead th {
-    padding: 12px;
-  }
-  
-  /* Table body styling */
-  tbody tr {
-    border-bottom: 1px solid #ddd;
-  }
-  
-  tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  tbody tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  tbody td {
-    padding: 10px;
-  }
-  
-  /* Button styling */
-  button {
-    padding: 6px 12px;
-    margin: 2px;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Update button styling */
-  button:first-of-type {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  button:first-of-type:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Delete button styling */
-  button:last-of-type {
-    background-color: #bc3737;
-    color: white;
-  }
-  
-  button:last-of-type:hover {
-    background-color: #4d3535;
-  }
-  
-  /* Heading styling */
-  h1 {
+.title {
     text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
     font-size: 24px;
-    color: #333;
-    margin: 20px 0;
-  }
-  
-  /* Center alignment for actions */
-  td:last-child {
+    font-weight: 600;
+}
+
+.filter-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    font-size: 16px;
+    color: #34495e;
+}
+
+.filter-group select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.filter-group select:focus {
+    border-color: #2980b9;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: left;
+}
+
+.styled-table thead {
+    background-color: #3498db;
+    color: white;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f9ff;
+}
+
+.no-data {
     text-align: center;
-  }
-  
-    
-    
+    padding: 20px;
+    color: #888;
+    font-style: italic;
+}

@@ -6,6 +6,7 @@ import About from './pages/about';
 import Feedback from './pages/feedback';
 import Signup from './pages/signup';
 import Login from './pages/login';
+import Course from './pages/course';
 import { Link } from 'react-router-dom';
 import './main.css';
 import React, { useState } from 'react';
@@ -55,6 +56,7 @@ function Main() {
           <Route path="/" element={<App />} />
           <Route path="/search" element={<Search />} />
           <Route path="/find" element={<Find />} />
+           <Route path="/course" element={<Course />} />
           <Route path="/About" element={<About />} />
           <Route path="/Feedback" element={<Feedback isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/signup" element={<Signup />} />

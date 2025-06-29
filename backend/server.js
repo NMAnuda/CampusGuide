@@ -6,8 +6,7 @@ const router = require('./routers');
 const app = express();
 const PORT = 3002;
 
-const url = "mongodb+srv://anuda5:anuda5@cluster0.exsoa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
+const url = "mongodb+srv://anuda7:Anuda7@cluster0.jjiqy8r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const connectDatabase = async () => {
     try {
         await mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });

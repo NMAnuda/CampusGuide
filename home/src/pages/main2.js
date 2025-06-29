@@ -40,7 +40,9 @@ function Main2() {
             <ul className="nav-links">
               <li ><Link to ="/">Home</Link></li>
               <li><Link to ="/About">About</Link></li>
-              <li><Link to ="/feedback">Feedback</Link></li>
+              <li><Link to ="/veiwfeedback">Feedback</Link></li>
+               <li><Link to ="/Dentries">Add</Link></li>
+                <li><Link to ="/All">All</Link></li>
             </ul>
             {!isLoggedIn ? (
                 <Link to="/login2" className="profile-icon">👤 Login</Link>
